@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ajouter un livre</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Ajouter un livre</h1>
+      <nav>
+        <a href="/">Accueil</a>
+        <a href="/livres">Voir les livres</a>
+      </nav>
+      <form method="POST">
+        <label for="titre">Titre :</label>
+        <input type="text" name="titre" required />
+
+        <label for="auteur">Auteur :</label>
+        <input type="text" name="auteur" required />
+
+        <input type="submit" value="Ajouter" />
+      </form>
+    </div>
+  </body>
+</html>

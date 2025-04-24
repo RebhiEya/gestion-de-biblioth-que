@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Liste des livres</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Livres disponibles</h1>
+      <nav>
+        <a href="/">Accueil</a>
+        <a href="/ajouter">Ajouter un livre</a>
+      </nav>
+      <ul class="livre-liste">
+        {% for livre in livres %}
+        <li><strong>{{ livre[1] }}</strong> - {{ livre[2] }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </body>
+</html>
